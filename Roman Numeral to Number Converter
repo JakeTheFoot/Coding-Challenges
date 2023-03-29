@@ -1,0 +1,31 @@
+def solution(roman):
+
+    numbers = []
+    value = 0
+    index = 0
+
+    RN_Dict = {
+                'I': 1,
+                'V': 5,
+                'X': 10,
+                'L': 50,
+                'C': 100,
+                'D': 500,
+                'M': 1000
+              }
+    
+    for character in roman:
+        numbers.append(RN_Dict[character])
+
+    Max = []
+    Leftover = []
+
+    for i in range(len(numbers)):
+        if len(numbers) == 1:
+            numbers.append(0)
+        if numbers[0] >= numbers[1]:
+            Max.append(numbers.pop(0))
+        else:
+            Leftover.append(numbers.pop(0))
+
+    return sum(Max) - sum(Leftover)
