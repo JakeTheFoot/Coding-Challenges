@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.card-text {
+  position: absolute;
+}
+
+.background {
+  width: 120%;
+  max-height: 240px;
+  margin-left: -2px;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  right: 4px;
+}
+
+.credit-card {
+  position: relative;
+  margin-top: 32px;
+  width: 343px;
+  height: 251px;
+}
+
+.card {
+  width: 286px;
+  height: 157px;
+  border-radius: 6px;
+  position: absolute;
+}
+
+.card-front {
+  background-image: url("./images/bg-card-front.png");
+  z-index: 3;
+  bottom: 0;
+}
+
+.card-back {
+  background-image: url("./images/bg-card-back.png");
+  background-size: cover;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+
+.card-back-numbers {
+  font-size: 12px;
+  letter-spacing: 1.29px;
+  right: 37px;
+  top: 58.5px;
+}
+
+.card-front-numbers {
+  font-size: 18px;
+  letter-spacing: 2.2px;
+  left: 19px;
+  bottom: 40.6px;
+}
+
+.circle {
+  border-radius: 100%;
+  position: absolute;
+}
+
+.circle-1 {
+  top: 17.6px;
+  left: 19px;
+  width: 30.19px;
+  height: 30.19px;
+  background-color: white;
+}
+
+.circle-2 {
+  top: 25.85px;
+  left: 59.42px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: none;
+  border: 1px solid white;
+}
+
+.card-subtext {
+  font-weight: 400;
+  font-size: 14px;
+  bottom: 10px;
+}
+
+.card-name {
+  left: 19px;
+}
+
+.card-date {
+  right: 19px;
+}
+
+.text-field {
+  width: 350px;
+  height: 40px;
+  border: none;
+  background-color: none;
+}
+
+.text-input {
+  width: 350px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--white);
+  border: 1px solid rgba(130, 143, 163, 0.25);
+  padding-left: 16px;
+  padding-right: 4px;
+  font-size: 13px;
+}
+
+.required-prequisite {
+  display: none;
+}
+
+.required-text {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  display: flex;
+  font-size: 13px;
+  color: red;
+}
+
+.required-input {
+  position: absolute;
+  border-color: red;
+}
+
+.required {
+  position: relative;
+}
+
+.absolutist {
+  position: absolute;
+  top: 400px;
+}
